@@ -1,4 +1,4 @@
-import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query";
+import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 export const todosApi = createApi({
 
@@ -16,5 +16,5 @@ export const todosApi = createApi({
 
 });
 
-export const { useGetTodosQuery } = todosApi; //es useGetTodos por la linea 12 y query porque es una peticion get
+export const { useGetTodosQuery } = todosApi; //es useGetTodos por la linea 12 y query porque es una petición get
 //si fuera post, put o delete seria 'useGetTodosMutation'
